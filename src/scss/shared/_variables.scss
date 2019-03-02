@@ -1,0 +1,26 @@
+// Font
+$fontFam: 'Space Mono', 'Consolas', 'Courier New', monospace;
+$fontBase: 21px;
+
+// Colour palette
+$darkGrey: #161616;
+$altGrey: #c5c5c5;
+$lightGrey: #f2f2f2;
+$slideMenuColour: #3c3c3c;
+$listBorderColour: #3eb3f6;
+
+$mainFontColour: #161616;
+$altFontColour: #fff;
+
+// Breakpoints
+$gridPadding: 0.5rem;
+
+$mobileBreakpoint: 38em;
+$tabletBreakpoint: 58em;
+$desktopBreakpoint: 80em;
+
+// Header
+$headerHeight: 3rem;
+
+// z-index
+$z-index: ( goldenHour:500, mainNav:1000, sideNav: 1500, slider: 2000, sliderActive: 2500, sliderControls: 3000, loading: 10000);

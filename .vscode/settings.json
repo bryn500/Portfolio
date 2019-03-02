@@ -1,0 +1,9 @@
+{
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    "scssFormatter.tabWidth": 4,
+    "jsFormatter.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 120,
+    "editor.tabSize": 4,
+    "indent_size": 4,
+}

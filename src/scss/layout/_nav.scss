@@ -1,0 +1,53 @@
+.slideMenu {
+    $width: 16.25rem;
+    transform: translate3d($width, 0, 0);
+    width: $width;
+    max-width: 66%;
+    height: 100%;
+    padding: 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: transform 0.5s ease, visibility 0.5s;
+    box-shadow: none;
+    visibility: hidden;
+    @include z-index(sideNav);
+    background: $slideMenuColour;
+    overflow-y: auto; // seems to stop paint flashing
+
+    &.visible {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    &__close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+.nav .svg,
+.slideMenu__close .svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: $altFontColour;
+}
+
+.nav {
+    @extend %noListStyle;
+
+    &__link {        
+        display: block;
+        color: $altFontColour;
+        padding: 1rem 0;
+        border-bottom: solid calculateRem(1px) rgba(255, 255, 255, 0.25);
+    }
+
+    .svg {
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 0.25rem;
+        fill: $altFontColour;
+    }
+}

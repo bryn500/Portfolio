@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>
+            <%= locals.title %>
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="<%= locals.description %>">
+        <meta name="author" content="Bryn Thomas">
+
+        <!-- Prefetch cdn dns -->
+        <!-- <link rel="dns-prefetch" href="@Urls.HostedContentBaseUrl"> -->
+
+        <!-- Change the url/status bar colour -->
+        <meta name="theme-color" content="#18191c">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <!-- font -->
+        <!-- Todo: load async -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+        <!-- inlined critical or cached all css -->
+        <% if(locals.cssCached){ %>
+        <link href="/css/styles.css" rel="stylesheet">
+        <% } else { %>
+        <%- locals.inlineCSS %>
+        <% } %>
+    </head>
+
+    <body>
+        <%- body %>
+
+        <!-- JS -->
+        <% include ./partials/inline-js.ejs %>
+        <script src="/js/layout.min.js"></script>
+        <script src="/js/vue-app.min.js" async></script>
+        <script src="/js/threex.stats.js" async></script>
+    </body>
+
+</html>

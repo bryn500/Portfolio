@@ -1,0 +1,4 @@
+﻿# robots.txt for website - allow and disallow crawling robots from site
+
+User-agent: *
+Disallow: /
