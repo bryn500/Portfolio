@@ -48,9 +48,6 @@ router.get('/other', function (req, res) {
     });
 });
 
-
-
-
 // serve static files from 'dist'
 router.use('/', express.static(resolvePath('dist')));
 

@@ -24,8 +24,20 @@ const middleware = history({
         { from: /\/api\/test/, to: '/api/test'}
       ]
 });
-
 app.use(middleware);
+
+// in production redirect locally hosted files to cdn
+app.use(function(req, res, next) {
+    if(process.env.NODE_ENV === 'production' && req.url.includes("img/portfolio")) {
+        var sharedPath = req.url.split('img/');
+        var absolutePath = "https://testcontent.azureedge.net/" + sharedPath[1];
+
+        res.redirect(absolutePath);
+        return;
+    }    
+
+    next();
+});
 
 // use ejs templates with layouts
 app.set('view engine', 'ejs');

@@ -159,7 +159,7 @@ export default {
 @import '../scss/shared/_variables.scss';
 
 .firstElement {
-  background-image: url('/img/high-res/2017-Japan-5.jpg');
+  background-image: url('/img/portfolio/high-res/2017-Japan-5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
