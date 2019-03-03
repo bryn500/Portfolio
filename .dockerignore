@@ -1,0 +1,14 @@
+# dev
+.git
+.gitignore
+.vscode
+nodemodules
+npm-debug.log
+
+# unnecessary 
+Dockerfile
+README.md
+LICENSE
+
+# built instead
+dist/hot
