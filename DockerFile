@@ -1,11 +1,10 @@
 FROM node:10.15.2-alpine
+#FROM stefanscherer/node-windows:latest
 WORKDIR /docker
 
 # Install app dependencies
 COPY package*.json /docker/
 RUN npm ci --only=production
-
-# Cache above
 COPY . /docker
 
 EXPOSE 3000

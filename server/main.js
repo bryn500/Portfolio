@@ -2,7 +2,7 @@
  * dependencies
  */
 import http from 'http';
-import app from './server/server.js';
+import app from './server.js';
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 
@@ -47,7 +47,6 @@ function onListening() {
         typeof addr === 'string' ? addr : addr.port
         }`;
     console.log(`Server running on ${bind}`);
-    console.log(`node environment: ${process.env.NODE_ENV}`);
 }
 
 /**

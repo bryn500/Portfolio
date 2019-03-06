@@ -1,11 +1,14 @@
-# Changes here
+# imgs not needed - cdn hosted/not used
 dist/img/portfolio
 dist/img/icons/fontawesome
-dist/hot/
 
-# No changes below
+# unecessary dev files
+dist/hot
 
+#
 # Node defaults
+#
+
 # Logs
 logs
 *.log

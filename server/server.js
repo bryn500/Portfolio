@@ -4,7 +4,7 @@ import path from 'path';
 import expressLayouts from 'express-ejs-layouts';
 import history from 'connect-history-api-fallback';
 import cookieParser from 'cookie-parser';
-import routes from './routes/main';
+import routes from './routes/routes';
 import api from './routes/api';
 
 // set up app

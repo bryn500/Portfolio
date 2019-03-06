@@ -5,7 +5,7 @@ import fs from 'fs';
 const router = express.Router();
 
 function resolvePath(relativePath) {
-    return path.join(path.dirname(require.main.filename), relativePath);
+    return path.join(__dirname, relativePath);
 }
 
 function getLocals(req, callback) {
@@ -15,7 +15,7 @@ function getLocals(req, callback) {
     };
 
     if (!data.cssCached) {
-        fs.readFile(resolvePath("/dist/css/styles.css"), "utf8", function (err, result) {
+        fs.readFile(resolvePath("../../dist/css/styles.css"), "utf8", function (err, result) {
             data.inlineCSS = `<style>${result}</style>`;
             callback(data);
         });
@@ -49,6 +49,6 @@ router.get('/other', function (req, res) {
 });
 
 // serve static files from 'dist'
-router.use('/', express.static(resolvePath('dist')));
+router.use('/', express.static(resolvePath('../../dist')));
 
 export default router;

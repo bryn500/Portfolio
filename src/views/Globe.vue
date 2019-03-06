@@ -21,9 +21,9 @@ import { memoize, getCurrentDimensions } from '../js/utils/utils.js';
 const baseSize = 1;
 const settings = {
   dataUrl: '/data/world.json',
-  earthMapPath: '/img/3d/earthmap.jpg',
-  earthBumpPath: '/img/3d/earthbump.jpg',
-  galaxyMapPath: '/img/3d/galaxy.png',
+  earthMapPath: '/img/portfolio/3d/earthmap.jpg',
+  earthBumpPath: '/img/portfolio/3d/earthbump.jpg',
+  galaxyMapPath: '/img/portfolio/3d/galaxy.png',
   bumpScale: 0.1,
   segments: 122, // number of vertices. Higher = better mouse accuracy
   cameraMoveSpeed: 0.01, // speed at which camera can be dragged around

@@ -1,14 +1,17 @@
-# dev
+# imgs not needed - cdn hosted/not used
+dist/img/portfolio
+dist/img/icons/fontawesome
+
+# Dev files
+src
+server
+
 .git
 .gitignore
+.gitattributes
 .vscode
-nodemodules
-npm-debug.log
-
-# unnecessary 
-Dockerfile
-README.md
-LICENSE
-
-# built instead
 dist/hot
+Dockerfile
+LICENSE
+README.md
+npm-debug.log
