@@ -11,7 +11,7 @@
     
     "build-frontend": "cross-env NODE_ENV=production webpack --mode=production --hide-modules",
     "build-server": "babel -d ./build ./server --copy-files",
-    "start": "cross-env NODE_ENV=production node ./build/main.js"
+    "start": "node ./build/main.js"
   },
   "dependencies": {
     "connect-history-api-fallback": "^1.5.0",
